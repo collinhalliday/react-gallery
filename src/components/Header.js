@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 
 const Header = (props) => (
   <header>
-    {props.search ? <Form searchHandler={props.performSearch} /> : null}
+    {props.search ? <Form /> : null}
     <Navigation />
   </header>
 );

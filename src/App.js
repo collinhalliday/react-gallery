@@ -44,14 +44,29 @@ const App = () => (
         }
       />
       <Route
-        path="/search"
+        exact path="/search"
         render={ () =>
           <Container
             title="Recently Posted"
             searchTerm="recent"
             api_key={config.api_key}
             search={true}
+            searching={false}
           />
+        }
+      />
+      <Route
+        path="/search/:query"
+        render={ ({match}) => {
+          return (
+            <Container
+              searchTerm={match.params.query}
+              api_key={config.api_key}
+              search={true}
+              searching={true}
+            />
+          );
+         }
         }
       />
       <Redirect from="/" to="/guitars" />
