@@ -1,12 +1,23 @@
 import React from 'react';
 
 import Image from './Image';
+import NotFound from './NotFound';
 
 const Gallery = (props) => (
   <div className="photo-container">
-    <h2>Results</h2>
+    {props.photos.length > 0
+     ?
+     <h2>{!props.searching ? props.title : "Results"}</h2>
+     :
+     null
+    }
+
     <ul>
-      {props.photos.map(photo => {
+       {props.photos.length < 1
+        ?
+        <NotFound />
+        :
+        props.photos.map(photo => {
         return (
           <Image
             farmID={photo.farm}
@@ -17,12 +28,6 @@ const Gallery = (props) => (
             title={photo.title}
           />
         )})}
-      
-      {/* Not Found */}
-      <li className="not-found">
-        <h3>No Results Found</h3>
-        <p>You search did not return any results. Please try again.</p>
-      </li>
     </ul>
   </div>
 );

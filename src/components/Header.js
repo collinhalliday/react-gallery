@@ -3,9 +3,9 @@ import React from 'react';
 import Form from './Form';
 import Navigation from './Navigation';
 
-const Header = () => (
+const Header = (props) => (
   <header>
-    <Form />
+    {props.search ? <Form searchHandler={props.performSearch} /> : null}
     <Navigation />
   </header>
 );
