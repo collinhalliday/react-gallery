@@ -11,14 +11,16 @@ class Container extends Component {
     super(props);
     this.state = {
       photos: [],
+      query: '',
       searching: false
     };
   }
 
   componentDidMount() {
-    if(!this.props.notFound) {
+    if(this.props.search)
+      this.findRecentPhotos();
+    else
       this.performSearch(this.props.searchTerm);
-    }
   }
 
   componentDidUpdate(prevProps) {
@@ -34,11 +36,13 @@ class Container extends Component {
     if(this.props.search)
       this.setState({
         ...this.state.photos,
+        query: query,
         searching: true
       });
     else
       this.setState({
         ...this.state.photos,
+        query: query,
         searching: false
       });
     axios.get(`https://api.flickr.com/services/rest/?
@@ -90,6 +94,7 @@ class Container extends Component {
           title={this.props.title}
           search={this.props.search}
           searching={this.state.searching}
+          searchQuery={this.state.query}
         />
 
       </div>

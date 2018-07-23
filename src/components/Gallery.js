@@ -5,12 +5,8 @@ import NotFound from './NotFound';
 
 const Gallery = (props) => (
   <div className="photo-container">
-    {props.photos.length > 0
-     ?
-     <h2>{!props.searching ? props.title : "Results"}</h2>
-     :
-     null
-    }
+
+    <h2>{!props.searching ? props.title : `Results for "${props.searchQuery}"`}</h2>
 
     <ul>
        {props.photos.length < 1
