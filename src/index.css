@@ -8,3 +8,8 @@
   position: relative;
   margin-top: 6%;
 }
+
+.angry {
+  border-radius: 100%;
+  height: 100%;
+}

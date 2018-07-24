@@ -3,11 +3,8 @@ import { withRouter } from 'react-router-dom';
 
 class Form extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      searchInput: ''
-    };
+  state = {
+    searchInput: ''
   }
 
   handleSearchInput = event => {
@@ -19,10 +16,7 @@ class Form extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     this.props.history.push(`/search/${this.state.searchInput}`);
-    //this.props.searchHandler(this.state.searchInput);
-    this.setState({
-      searchInput: ''
-    });
+    event.currentTarget.reset();
   }
 
   render() {

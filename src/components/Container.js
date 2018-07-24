@@ -18,34 +18,27 @@ class Container extends Component {
   }
 
   componentDidMount() {
-    if(this.props.searchTerm === "recent")
+    if(this.props.category === "recent")
       this.findRecentPhotos();
     else
-      this.performSearch(this.props.searchTerm);
+      this.performSearch(this.props.category);
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.searchTerm !== prevProps.searchTerm) {
-      if(this.props.searchTerm === "recent")
+    if (this.props.category !== prevProps.category) {
+      if(this.props.category === "recent")
         this.findRecentPhotos();
       else
-        this.performSearch(this.props.searchTerm);
+        this.performSearch(this.props.category);
     }
   }
 
   performSearch = query => {
-    if(this.props.search)
-      this.setState({
-        ...this.state.photos,
-        query,
-        loading: true
-      });
-    else
-      this.setState({
-        ...this.state.photos,
-        query,
-        loading: true
-      });
+    this.setState({
+      ...this.state.photos,
+      query,
+      loading: true
+    });
     axios.get(`https://api.flickr.com/services/rest/?
       method=flickr.photos.search&
       api_key=${this.props.api_key}&
@@ -60,7 +53,6 @@ class Container extends Component {
         photos: response.data.photos.photo,
         loading: false
       })
-      console.dir(this.state);
     })
     .catch(error => {
       console.log('Error fetching and parsing data', error);
@@ -78,12 +70,10 @@ class Container extends Component {
       format=json&
       nojsoncallback=1`)
     .then(response => {
-      console.log(response);
       this.setState({
         photos: response.data.photos.photo,
         loading: false
       })
-
     })
     .catch(error => {
       console.log('Error fetching and parsing data', error);

@@ -8,37 +8,44 @@ import {
 } from 'react-router-dom';
 
 import Container from './components/Container';
+import PageNotFound from './components/PageNotFound';
 import config from './data/config.js';
 
 const App = () => (
   <BrowserRouter>
     <Switch>
       <Route
-        path="/guitars"
+        exact path="/"
+        render={ () =>
+          <Redirect to="/guitars" />
+        }
+      />
+      <Route
+        exact path="/guitars"
         render={ () =>
           <Container
             title="Guitars"
-            searchTerm="guitars"
+            category="guitars"
             api_key={config.api_key}
           />
         }
       />
       <Route
-        path="/dogs"
+        exact path="/dogs"
         render={ () =>
           <Container
             title="Dogs"
-            searchTerm="dogs"
+            category="dogs"
             api_key={config.api_key}
           />
         }
       />
       <Route
-        path="/planets"
+        exact path="/planets"
         render={ () =>
           <Container
             title="Planets"
-            searchTerm="planets"
+            category="planets"
             api_key={config.api_key}
           />
         }
@@ -48,7 +55,7 @@ const App = () => (
         render={ () =>
           <Container
             title="Recently Posted"
-            searchTerm="recent"
+            category="recent"
             api_key={config.api_key}
             search={true}
             searching={false}
@@ -56,11 +63,11 @@ const App = () => (
         }
       />
       <Route
-        path="/search/:query"
+        exact path="/search/:query"
         render={ ({match}) => {
           return (
             <Container
-              searchTerm={match.params.query}
+              category={match.params.query}
               api_key={config.api_key}
               search={true}
               searching={true}
@@ -69,13 +76,8 @@ const App = () => (
          }
         }
       />
-      <Redirect from="/" to="/guitars" />
       <Route
-        render={ () =>
-          <Container
-            notFound={true}
-          />
-        }
+        component={PageNotFound}
       />
     </Switch>
   </BrowserRouter>
