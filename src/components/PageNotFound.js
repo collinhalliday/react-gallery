@@ -6,6 +6,7 @@ const PageNotFound = () => (
   <div>
     <div>
       <img className="angry" src={angryJPG} alt='' />
+      <div className="gradient"></div>
     </div>
     <div className="page-not-found">
       <h3><span className="whoops">Whoooops!</span> The page you are looking for does not exist.</h3>
