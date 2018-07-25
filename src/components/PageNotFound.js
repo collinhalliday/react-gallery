@@ -12,6 +12,7 @@ const PageNotFound = () => (
       <h3><span className="whoops">Whoooops!</span> The page you are looking for does not exist.</h3>
       <h3>Please refrain from destroying your computer and try again.</h3>
     </div>
+    <a className="home-button" href='/'>Home</a>
     <div className="error">
       404
     </div>
