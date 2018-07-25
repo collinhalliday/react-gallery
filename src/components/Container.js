@@ -45,7 +45,7 @@ class Container extends Component {
       tags=${query}&
       content_type=1&
       sort=relevance&
-      per_page=24&
+      per_page=16&
       format=json&
       nojsoncallback=1`)
     .then(response => {
@@ -66,7 +66,7 @@ class Container extends Component {
     axios.get(`https://api.flickr.com/services/rest/?
       method=flickr.photos.getRecent&
       api_key=${this.props.api_key}&
-      per_page=24&
+      per_page=16&
       format=json&
       nojsoncallback=1`)
     .then(response => {

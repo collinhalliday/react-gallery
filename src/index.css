@@ -1,7 +1,53 @@
+body {
+  background: black;
+  /* background: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: radial-gradient(circle, white, black); */
+  color: white;
+}
+
+h2 {
+  font-family: Arial Black;
+}
+
+/***********PHOTO CONTAINER***************/
+/* .photo-container h2 {
+  color: white;
+} */
+
+/***********SEARCH FORM***************/
+.search-form input {
+    border: 1px solid black;
+}
+
+.search-form button {
+  background: red;
+}
+
+/***********NAV LINKS***************/
+.main-nav {
+  /* border-top: 1px dotted white;
+  border-bottom: 1px dotted white; */
+}
+
+.main-nav a {
+  background: red;
+}
+
+/***********ACTIVE/HOVER***************/
+.main-nav .active,
+.main-nav a:hover,
+.search-form button:hover {
+  background: white;
+  color: red;
+  font-weight: bold;
+}
+
+/***********SEARCH RESULTS***************/
 .no-transform {
   text-transform: none;
 }
 
+/***********LOADING DISPLAY***************/
 .loading {
   font-size: 1.5em;
   font-weight: bold;
@@ -9,7 +55,2231 @@
   margin-top: 6%;
 }
 
+/************PAGE NOT FOUND***************/
+
 .angry {
   border-radius: 100%;
-  height: 100%;
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  z-index: 1000;
+}
+
+.whoops {
+  font-size: 2.5em;
+}
+
+.page-not-found {
+  font-size: 1.2em;
+  font-weight: bold;
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  z-index: 900;
+}
+
+.error,
+.error2,
+.error3,
+.error4,
+.error5,
+.error6,
+.error7,
+.error8,
+.error9,
+.error10,
+.error11,
+.error12,
+.error13,
+.error14,
+.error15,
+.error16,
+.error17,
+.error18,
+.error19,
+.error20 {
+  color: red;
+  animation-iteration-count: 100000;
+  position: absolute;
+}
+
+.error {
+  animation-name: error;
+  animation-duration: 100s;
+}
+
+@keyframes error {
+  0% {left:509px; top:402px;}
+  1% {left:1413px; top:184px;}
+  2% {left:367px; top:27px;}
+  3% {left:719px; top:395px;}
+  4% {left:152px; top:297px;}
+  5% {left:442px; top:420px;}
+  6% {left:316px; top:514px;}
+  7% {left:156px; top:376px;}
+  8% {left:517px; top:415px;}
+  9% {left:950px; top:677px;}
+  10% {left:693px; top:179px;}
+  11% {left:1344px; top:333px;}
+  12% {left:1129px; top:401px;}
+  13% {left:607px; top:623px;}
+  14% {left:1063px; top:423px;}
+  15% {left:35px; top:271px;}
+  16% {left:1158px; top:142px;}
+  17% {left:999px; top:684px;}
+  18% {left:230px; top:431px;}
+  19% {left:301px; top:699px;}
+  20% {left:1273px; top:588px;}
+  21% {left:962px; top:115px;}
+  22% {left:524px; top:311px;}
+  23% {left:30px; top:680px;}
+  24% {left:733px; top:708px;}
+  25% {left:520px; top:50px;}
+  26% {left:1058px; top:692px;}
+  27% {left:765px; top:179px;}
+  28% {left:1168px; top:345px;}
+  29% {left:263px; top:713px;}
+  30% {left:568px; top:259px;}
+  31% {left:210px; top:526px;}
+  32% {left:495px; top:493px;}
+  33% {left:1138px; top:561px;}
+  34% {left:196px; top:125px;}
+  35% {left:753px; top:674px;}
+  36% {left:146px; top:444px;}
+  37% {left:52px; top:695px;}
+  38% {left:964px; top:441px;}
+  39% {left:1082px; top:253px;}
+  40% {left:498px; top:70px;}
+  41% {left:128px; top:517px;}
+  42% {left:721px; top:431px;}
+  43% {left:993px; top:411px;}
+  44% {left:1098px; top:598px;}
+  45% {left:1322px; top:505px;}
+  46% {left:918px; top:124px;}
+  47% {left:989px; top:299px;}
+  48% {left:1292px; top:456px;}
+  49% {left:1155px; top:27px;}
+  50% {left:878px; top:339px;}
+  51% {left:129px; top:421px;}
+  52% {left:485px; top:30px;}
+  53% {left:298px; top:628px;}
+  54% {left:683px; top:670px;}
+  55% {left:1413px; top:135px;}
+  56% {left:1332px; top:108px;}
+  57% {left:742px; top:256px;}
+  58% {left:386px; top:729px;}
+  59% {left:892px; top:435px;}
+  60% {left:467px; top:254px;}
+  61% {left:1258px; top:100px;}
+  62% {left:1344px; top:230px;}
+  63% {left:5px; top:630px;}
+  64% {left:1205px; top:26px;}
+  65% {left:832px; top:544px;}
+  66% {left:857px; top:167px;}
+  67% {left:1284px; top:320px;}
+  68% {left:866px; top:353px;}
+  69% {left:427px; top:158px;}
+  70% {left:175px; top:315px;}
+  71% {left:800px; top:274px;}
+  72% {left:608px; top:18px;}
+  73% {left:172px; top:73px;}
+  74% {left:1192px; top:700px;}
+  75% {left:1414px; top:212px;}
+  76% {left:470px; top:275px;}
+  77% {left:272px; top:176px;}
+  78% {left:200px; top:99px;}
+  79% {left:78px; top:168px;}
+  80% {left:905px; top:176px;}
+  81% {left:595px; top:61px;}
+  82% {left:814px; top:284px;}
+  83% {left:1112px; top:146px;}
+  84% {left:975px; top:679px;}
+  85% {left:969px; top:167px;}
+  86% {left:858px; top:82px;}
+  87% {left:471px; top:233px;}
+  88% {left:700px; top:543px;}
+  89% {left:1361px; top:273px;}
+  90% {left:1101px; top:294px;}
+  91% {left:185px; top:711px;}
+  92% {left:973px; top:317px;}
+  93% {left:365px; top:3px;}
+  94% {left:286px; top:621px;}
+  95% {left:1073px; top:462px;}
+  96% {left:447px; top:123px;}
+  97% {left:437px; top:158px;}
+  98% {left:400px; top:472px;}
+  99% {left:990px; top:695px;}
+  100% {left:854px; top:205px;}
+}
+
+.error2 {
+  animation-name: error2;
+  animation-duration: 90s;
+}
+
+@keyframes error2 {
+  0% {left:992px; top:115px;}
+  1% {left:325px; top:127px;}
+  2% {left:409px; top:49px;}
+  3% {left:367px; top:263px;}
+  4% {left:766px; top:46px;}
+  5% {left:1119px; top:260px;}
+  6% {left:987px; top:355px;}
+  7% {left:907px; top:219px;}
+  8% {left:299px; top:314px;}
+  9% {left:268px; top:552px;}
+  10% {left:1160px; top:613px;}
+  11% {left:731px; top:635px;}
+  12% {left:1299px; top:383px;}
+  13% {left:157px; top:702px;}
+  14% {left:1410px; top:521px;}
+  15% {left:201px; top:686px;}
+  16% {left:583px; top:211px;}
+  17% {left:973px; top:571px;}
+  18% {left:187px; top:225px;}
+  19% {left:967px; top:55px;}
+  20% {left:322px; top:483px;}
+  21% {left:708px; top:168px;}
+  22% {left:1087px; top:246px;}
+  23% {left:1098px; top:557px;}
+  24% {left:372px; top:83px;}
+  25% {left:1042px; top:299px;}
+  26% {left:1258px; top:307px;}
+  27% {left:927px; top:536px;}
+  28% {left:287px; top:721px;}
+  29% {left:1057px; top:339px;}
+  30% {left:537px; top:556px;}
+  31% {left:8px; top:493px;}
+  32% {left:28px; top:16px;}
+  33% {left:925px; top:37px;}
+  34% {left:1229px; top:2px;}
+  35% {left:601px; top:540px;}
+  36% {left:462px; top:431px;}
+  37% {left:942px; top:231px;}
+  38% {left:505px; top:322px;}
+  39% {left:57px; top:212px;}
+  40% {left:1414px; top:236px;}
+  41% {left:57px; top:362px;}
+  42% {left:641px; top:48px;}
+  43% {left:333px; top:492px;}
+  44% {left:972px; top:317px;}
+  45% {left:1173px; top:453px;}
+  46% {left:724px; top:413px;}
+  47% {left:821px; top:292px;}
+  48% {left:581px; top:497px;}
+  49% {left:745px; top:390px;}
+  50% {left:871px; top:626px;}
+  51% {left:1016px; top:110px;}
+  52% {left:1383px; top:685px;}
+  53% {left:609px; top:49px;}
+  54% {left:106px; top:234px;}
+  55% {left:220px; top:320px;}
+  56% {left:1159px; top:314px;}
+  57% {left:1303px; top:562px;}
+  58% {left:639px; top:620px;}
+  59% {left:282px; top:147px;}
+  60% {left:1351px; top:633px;}
+  61% {left:719px; top:374px;}
+  62% {left:1155px; top:717px;}
+  63% {left:92px; top:126px;}
+  64% {left:1158px; top:133px;}
+  65% {left:1210px; top:300px;}
+  66% {left:451px; top:590px;}
+  67% {left:1375px; top:312px;}
+  68% {left:1303px; top:534px;}
+  69% {left:119px; top:85px;}
+  70% {left:330px; top:473px;}
+  71% {left:1198px; top:108px;}
+  72% {left:1069px; top:291px;}
+  73% {left:912px; top:57px;}
+  74% {left:1160px; top:88px;}
+  75% {left:1135px; top:610px;}
+  76% {left:385px; top:207px;}
+  77% {left:349px; top:486px;}
+  78% {left:620px; top:204px;}
+  79% {left:1166px; top:269px;}
+  80% {left:337px; top:158px;}
+  81% {left:1098px; top:588px;}
+  82% {left:345px; top:665px;}
+  83% {left:450px; top:296px;}
+  84% {left:348px; top:699px;}
+  85% {left:1004px; top:638px;}
+  86% {left:406px; top:442px;}
+  87% {left:216px; top:644px;}
+  88% {left:882px; top:590px;}
+  89% {left:870px; top:408px;}
+  90% {left:1347px; top:408px;}
+  91% {left:166px; top:167px;}
+  92% {left:529px; top:175px;}
+  93% {left:95px; top:55px;}
+  94% {left:396px; top:327px;}
+  95% {left:350px; top:443px;}
+  96% {left:1087px; top:134px;}
+  97% {left:1176px; top:620px;}
+  98% {left:352px; top:286px;}
+  99% {left:951px; top:490px;}
+  100% {left:137px; top:412px;}
+}
+
+.error3 {
+  animation-name: error3;
+  animation-duration: 80s;
+}
+
+@keyframes error3 {
+  0% {left:1165px; top:704px;}
+  1% {left:780px; top:468px;}
+  2% {left:1046px; top:64px;}
+  3% {left:410px; top:243px;}
+  4% {left:1252px; top:368px;}
+  5% {left:222px; top:578px;}
+  6% {left:1131px; top:666px;}
+  7% {left:735px; top:3px;}
+  8% {left:19px; top:555px;}
+  9% {left:226px; top:686px;}
+  10% {left:1078px; top:644px;}
+  11% {left:707px; top:559px;}
+  12% {left:438px; top:319px;}
+  13% {left:1118px; top:338px;}
+  14% {left:320px; top:484px;}
+  15% {left:626px; top:85px;}
+  16% {left:170px; top:594px;}
+  17% {left:1216px; top:430px;}
+  18% {left:587px; top:147px;}
+  19% {left:1157px; top:140px;}
+  20% {left:1286px; top:173px;}
+  21% {left:645px; top:250px;}
+  22% {left:727px; top:454px;}
+  23% {left:443px; top:109px;}
+  24% {left:280px; top:405px;}
+  25% {left:869px; top:44px;}
+  26% {left:917px; top:29px;}
+  27% {left:654px; top:633px;}
+  28% {left:691px; top:441px;}
+  29% {left:533px; top:108px;}
+  30% {left:1005px; top:717px;}
+  31% {left:692px; top:310px;}
+  32% {left:1046px; top:673px;}
+  33% {left:1277px; top:593px;}
+  34% {left:1102px; top:414px;}
+  35% {left:219px; top:355px;}
+  36% {left:395px; top:629px;}
+  37% {left:343px; top:648px;}
+  38% {left:1162px; top:382px;}
+  39% {left:1408px; top:374px;}
+  40% {left:1111px; top:560px;}
+  41% {left:17px; top:420px;}
+  42% {left:276px; top:646px;}
+  43% {left:274px; top:561px;}
+  44% {left:840px; top:173px;}
+  45% {left:621px; top:373px;}
+  46% {left:716px; top:577px;}
+  47% {left:426px; top:667px;}
+  48% {left:1215px; top:338px;}
+  49% {left:233px; top:345px;}
+  50% {left:785px; top:99px;}
+  51% {left:942px; top:525px;}
+  52% {left:502px; top:493px;}
+  53% {left:1059px; top:227px;}
+  54% {left:512px; top:327px;}
+  55% {left:721px; top:208px;}
+  56% {left:1085px; top:138px;}
+  57% {left:587px; top:383px;}
+  58% {left:947px; top:258px;}
+  59% {left:223px; top:104px;}
+  60% {left:1080px; top:195px;}
+  61% {left:914px; top:4px;}
+  62% {left:958px; top:724px;}
+  63% {left:558px; top:23px;}
+  64% {left:183px; top:696px;}
+  65% {left:380px; top:592px;}
+  66% {left:1367px; top:688px;}
+  67% {left:702px; top:454px;}
+  68% {left:481px; top:195px;}
+  69% {left:440px; top:269px;}
+  70% {left:111px; top:42px;}
+  71% {left:1130px; top:267px;}
+  72% {left:569px; top:536px;}
+  73% {left:1013px; top:572px;}
+  74% {left:147px; top:162px;}
+  75% {left:910px; top:342px;}
+  76% {left:298px; top:145px;}
+  77% {left:16px; top:499px;}
+  78% {left:125px; top:276px;}
+  79% {left:282px; top:451px;}
+  80% {left:469px; top:127px;}
+  81% {left:275px; top:603px;}
+  82% {left:616px; top:409px;}
+  83% {left:57px; top:77px;}
+  84% {left:842px; top:34px;}
+  85% {left:430px; top:484px;}
+  86% {left:868px; top:5px;}
+  87% {left:793px; top:282px;}
+  88% {left:650px; top:672px;}
+  89% {left:906px; top:693px;}
+  90% {left:1090px; top:146px;}
+  91% {left:389px; top:131px;}
+  92% {left:124px; top:82px;}
+  93% {left:1168px; top:118px;}
+  94% {left:1045px; top:425px;}
+  95% {left:1258px; top:151px;}
+  96% {left:1170px; top:333px;}
+  97% {left:292px; top:533px;}
+  98% {left:570px; top:80px;}
+  99% {left:127px; top:1px;}
+  100% {left:1071px; top:237px;}
+}
+
+.error4 {
+  animation-name: error4;
+  animation-duration: 70s;
+}
+
+@keyframes error4 {
+  0% {left:451px; top:361px;}
+  1% {left:967px; top:80px;}
+  2% {left:1101px; top:294px;}
+  3% {left:1374px; top:294px;}
+  4% {left:1214px; top:655px;}
+  5% {left:279px; top:56px;}
+  6% {left:1078px; top:181px;}
+  7% {left:122px; top:215px;}
+  8% {left:1033px; top:67px;}
+  9% {left:380px; top:123px;}
+  10% {left:848px; top:391px;}
+  11% {left:581px; top:592px;}
+  12% {left:411px; top:462px;}
+  13% {left:39px; top:61px;}
+  14% {left:301px; top:651px;}
+  15% {left:798px; top:446px;}
+  16% {left:1075px; top:144px;}
+  17% {left:898px; top:563px;}
+  18% {left:186px; top:86px;}
+  19% {left:597px; top:572px;}
+  20% {left:1281px; top:225px;}
+  21% {left:1155px; top:352px;}
+  22% {left:1112px; top:73px;}
+  23% {left:758px; top:522px;}
+  24% {left:1145px; top:279px;}
+  25% {left:861px; top:306px;}
+  26% {left:891px; top:131px;}
+  27% {left:644px; top:388px;}
+  28% {left:910px; top:555px;}
+  29% {left:1383px; top:515px;}
+  30% {left:1071px; top:654px;}
+  31% {left:805px; top:585px;}
+  32% {left:367px; top:152px;}
+  33% {left:516px; top:715px;}
+  34% {left:1092px; top:360px;}
+  35% {left:325px; top:268px;}
+  36% {left:813px; top:346px;}
+  37% {left:1063px; top:355px;}
+  38% {left:802px; top:696px;}
+  39% {left:850px; top:374px;}
+  40% {left:219px; top:655px;}
+  41% {left:351px; top:617px;}
+  42% {left:1042px; top:629px;}
+  43% {left:1234px; top:474px;}
+  44% {left:326px; top:619px;}
+  45% {left:919px; top:586px;}
+  46% {left:586px; top:603px;}
+  47% {left:910px; top:114px;}
+  48% {left:586px; top:454px;}
+  49% {left:221px; top:105px;}
+  50% {left:1010px; top:249px;}
+  51% {left:437px; top:269px;}
+  52% {left:837px; top:467px;}
+  53% {left:818px; top:281px;}
+  54% {left:925px; top:313px;}
+  55% {left:1233px; top:223px;}
+  56% {left:828px; top:588px;}
+  57% {left:76px; top:375px;}
+  58% {left:1356px; top:190px;}
+  59% {left:1129px; top:528px;}
+  60% {left:229px; top:669px;}
+  61% {left:313px; top:730px;}
+  62% {left:1209px; top:277px;}
+  63% {left:423px; top:359px;}
+  64% {left:170px; top:381px;}
+  65% {left:297px; top:363px;}
+  66% {left:583px; top:450px;}
+  67% {left:1383px; top:721px;}
+  68% {left:633px; top:625px;}
+  69% {left:983px; top:245px;}
+  70% {left:187px; top:25px;}
+  71% {left:931px; top:711px;}
+  72% {left:314px; top:315px;}
+  73% {left:807px; top:703px;}
+  74% {left:639px; top:160px;}
+  75% {left:648px; top:246px;}
+  76% {left:754px; top:575px;}
+  77% {left:1323px; top:549px;}
+  78% {left:561px; top:58px;}
+  79% {left:664px; top:14px;}
+  80% {left:1289px; top:412px;}
+  81% {left:905px; top:580px;}
+  82% {left:1245px; top:580px;}
+  83% {left:757px; top:451px;}
+  84% {left:1417px; top:533px;}
+  85% {left:692px; top:358px;}
+  86% {left:590px; top:328px;}
+  87% {left:825px; top:602px;}
+  88% {left:1138px; top:397px;}
+  89% {left:683px; top:90px;}
+  90% {left:215px; top:126px;}
+  91% {left:1178px; top:210px;}
+  92% {left:1084px; top:203px;}
+  93% {left:732px; top:396px;}
+  94% {left:606px; top:640px;}
+  95% {left:308px; top:583px;}
+  96% {left:1379px; top:402px;}
+  97% {left:342px; top:74px;}
+  98% {left:327px; top:502px;}
+  99% {left:1212px; top:323px;}
+  100% {left:1171px; top:617px;}
+}
+
+.error5 {
+  animation-name: error5;
+  animation-duration: 80s;
+}
+
+@keyframes error5 {
+  0% {left:1276px; top:77px;}
+  1% {left:125px; top:308px;}
+  2% {left:188px; top:349px;}
+  3% {left:1025px; top:571px;}
+  4% {left:142px; top:712px;}
+  5% {left:1057px; top:281px;}
+  6% {left:147px; top:330px;}
+  7% {left:1331px; top:199px;}
+  8% {left:311px; top:335px;}
+  9% {left:583px; top:327px;}
+  10% {left:622px; top:262px;}
+  11% {left:222px; top:370px;}
+  12% {left:267px; top:239px;}
+  13% {left:1318px; top:290px;}
+  14% {left:300px; top:471px;}
+  15% {left:676px; top:268px;}
+  16% {left:1172px; top:202px;}
+  17% {left:762px; top:364px;}
+  18% {left:1369px; top:178px;}
+  19% {left:740px; top:44px;}
+  20% {left:1047px; top:218px;}
+  21% {left:698px; top:502px;}
+  22% {left:868px; top:459px;}
+  23% {left:1396px; top:635px;}
+  24% {left:740px; top:488px;}
+  25% {left:907px; top:96px;}
+  26% {left:392px; top:694px;}
+  27% {left:1294px; top:335px;}
+  28% {left:225px; top:427px;}
+  29% {left:463px; top:207px;}
+  30% {left:519px; top:597px;}
+  31% {left:800px; top:104px;}
+  32% {left:1327px; top:662px;}
+  33% {left:158px; top:468px;}
+  34% {left:207px; top:388px;}
+  35% {left:384px; top:322px;}
+  36% {left:1299px; top:522px;}
+  37% {left:363px; top:152px;}
+  38% {left:560px; top:114px;}
+  39% {left:133px; top:272px;}
+  40% {left:87px; top:208px;}
+  41% {left:1203px; top:75px;}
+  42% {left:683px; top:564px;}
+  43% {left:784px; top:385px;}
+  44% {left:1081px; top:70px;}
+  45% {left:1215px; top:432px;}
+  46% {left:769px; top:55px;}
+  47% {left:773px; top:409px;}
+  48% {left:142px; top:714px;}
+  49% {left:797px; top:721px;}
+  50% {left:1155px; top:214px;}
+  51% {left:1099px; top:326px;}
+  52% {left:331px; top:571px;}
+  53% {left:580px; top:274px;}
+  54% {left:1201px; top:612px;}
+  55% {left:156px; top:593px;}
+  56% {left:1210px; top:58px;}
+  57% {left:1028px; top:502px;}
+  58% {left:1346px; top:254px;}
+  59% {left:604px; top:419px;}
+  60% {left:526px; top:197px;}
+  61% {left:443px; top:544px;}
+  62% {left:232px; top:26px;}
+  63% {left:1342px; top:538px;}
+  64% {left:659px; top:310px;}
+  65% {left:560px; top:8px;}
+  66% {left:328px; top:193px;}
+  67% {left:1145px; top:373px;}
+  68% {left:927px; top:360px;}
+  69% {left:1025px; top:133px;}
+  70% {left:360px; top:140px;}
+  71% {left:749px; top:586px;}
+  72% {left:382px; top:480px;}
+  73% {left:1167px; top:433px;}
+  74% {left:43px; top:222px;}
+  75% {left:912px; top:332px;}
+  76% {left:714px; top:496px;}
+  77% {left:494px; top:608px;}
+  78% {left:800px; top:328px;}
+  79% {left:503px; top:70px;}
+  80% {left:925px; top:159px;}
+  81% {left:54px; top:555px;}
+  82% {left:441px; top:24px;}
+  83% {left:96px; top:89px;}
+  84% {left:1294px; top:347px;}
+  85% {left:1223px; top:631px;}
+  86% {left:758px; top:72px;}
+  87% {left:131px; top:648px;}
+  88% {left:258px; top:320px;}
+  89% {left:809px; top:627px;}
+  90% {left:131px; top:326px;}
+  91% {left:622px; top:102px;}
+  92% {left:676px; top:208px;}
+  93% {left:1267px; top:27px;}
+  94% {left:691px; top:132px;}
+  95% {left:880px; top:34px;}
+  96% {left:4px; top:301px;}
+  97% {left:924px; top:324px;}
+  98% {left:544px; top:181px;}
+  99% {left:330px; top:557px;}
+  100% {left:126px; top:659px;}
+}
+
+.error6 {
+  animation-name: error6;
+  animation-duration: 90s;
+}
+
+@keyframes error6 {
+  0% {left:1203px; top:30px;}
+  1% {left:96px; top:733px;}
+  2% {left:793px; top:677px;}
+  3% {left:398px; top:181px;}
+  4% {left:944px; top:325px;}
+  5% {left:502px; top:565px;}
+  6% {left:372px; top:71px;}
+  7% {left:349px; top:287px;}
+  8% {left:147px; top:201px;}
+  9% {left:545px; top:703px;}
+  10% {left:90px; top:43px;}
+  11% {left:754px; top:622px;}
+  12% {left:1263px; top:8px;}
+  13% {left:922px; top:565px;}
+  14% {left:68px; top:341px;}
+  15% {left:941px; top:300px;}
+  16% {left:1035px; top:462px;}
+  17% {left:292px; top:657px;}
+  18% {left:1407px; top:153px;}
+  19% {left:1392px; top:391px;}
+  20% {left:491px; top:351px;}
+  21% {left:568px; top:484px;}
+  22% {left:860px; top:289px;}
+  23% {left:632px; top:372px;}
+  24% {left:34px; top:687px;}
+  25% {left:661px; top:546px;}
+  26% {left:816px; top:128px;}
+  27% {left:65px; top:329px;}
+  28% {left:1243px; top:12px;}
+  29% {left:308px; top:328px;}
+  30% {left:1060px; top:605px;}
+  31% {left:128px; top:353px;}
+  32% {left:1032px; top:94px;}
+  33% {left:1010px; top:38px;}
+  34% {left:975px; top:348px;}
+  35% {left:1334px; top:674px;}
+  36% {left:1204px; top:355px;}
+  37% {left:1048px; top:188px;}
+  38% {left:672px; top:727px;}
+  39% {left:508px; top:339px;}
+  40% {left:625px; top:13px;}
+  41% {left:330px; top:512px;}
+  42% {left:134px; top:86px;}
+  43% {left:1300px; top:297px;}
+  44% {left:33px; top:354px;}
+  45% {left:1400px; top:43px;}
+  46% {left:121px; top:483px;}
+  47% {left:546px; top:7px;}
+  48% {left:1131px; top:65px;}
+  49% {left:1193px; top:669px;}
+  50% {left:205px; top:513px;}
+  51% {left:596px; top:32px;}
+  52% {left:1096px; top:648px;}
+  53% {left:1040px; top:69px;}
+  54% {left:791px; top:213px;}
+  55% {left:1086px; top:497px;}
+  56% {left:554px; top:517px;}
+  57% {left:1366px; top:182px;}
+  58% {left:1028px; top:505px;}
+  59% {left:727px; top:675px;}
+  60% {left:386px; top:426px;}
+  61% {left:1422px; top:354px;}
+  62% {left:1376px; top:652px;}
+  63% {left:1016px; top:679px;}
+  64% {left:439px; top:669px;}
+  65% {left:166px; top:715px;}
+  66% {left:360px; top:583px;}
+  67% {left:572px; top:528px;}
+  68% {left:275px; top:119px;}
+  69% {left:598px; top:401px;}
+  70% {left:118px; top:428px;}
+  71% {left:187px; top:489px;}
+  72% {left:1157px; top:521px;}
+  73% {left:814px; top:231px;}
+  74% {left:1344px; top:679px;}
+  75% {left:734px; top:348px;}
+  76% {left:784px; top:684px;}
+  77% {left:860px; top:118px;}
+  78% {left:1347px; top:273px;}
+  79% {left:852px; top:161px;}
+  80% {left:1129px; top:464px;}
+  81% {left:75px; top:279px;}
+  82% {left:847px; top:229px;}
+  83% {left:123px; top:139px;}
+  84% {left:925px; top:49px;}
+  85% {left:278px; top:333px;}
+  86% {left:1382px; top:153px;}
+  87% {left:717px; top:141px;}
+  88% {left:335px; top:439px;}
+  89% {left:125px; top:448px;}
+  90% {left:986px; top:88px;}
+  91% {left:225px; top:402px;}
+  92% {left:344px; top:231px;}
+  93% {left:730px; top:376px;}
+  94% {left:629px; top:491px;}
+  95% {left:640px; top:569px;}
+  96% {left:481px; top:106px;}
+  97% {left:371px; top:548px;}
+  98% {left:941px; top:416px;}
+  99% {left:155px; top:226px;}
+  100% {left:462px; top:77px;}
+}
+
+.error7 {
+  animation-name: error7;
+  animation-duration: 100s;
+}
+
+@keyframes error7 {
+  0% {left:299px; top:365px;}
+  1% {left:109px; top:421px;}
+  2% {left:408px; top:706px;}
+  3% {left:260px; top:644px;}
+  4% {left:226px; top:229px;}
+  5% {left:801px; top:602px;}
+  6% {left:461px; top:6px;}
+  7% {left:458px; top:725px;}
+  8% {left:1154px; top:507px;}
+  9% {left:217px; top:313px;}
+  10% {left:156px; top:44px;}
+  11% {left:1371px; top:1px;}
+  12% {left:892px; top:39px;}
+  13% {left:919px; top:470px;}
+  14% {left:34px; top:145px;}
+  15% {left:706px; top:197px;}
+  16% {left:1379px; top:114px;}
+  17% {left:583px; top:255px;}
+  18% {left:312px; top:374px;}
+  19% {left:1200px; top:312px;}
+  20% {left:1235px; top:510px;}
+  21% {left:1364px; top:244px;}
+  22% {left:1270px; top:434px;}
+  23% {left:26px; top:343px;}
+  24% {left:677px; top:200px;}
+  25% {left:1053px; top:341px;}
+  26% {left:1290px; top:353px;}
+  27% {left:316px; top:107px;}
+  28% {left:382px; top:130px;}
+  29% {left:681px; top:408px;}
+  30% {left:1296px; top:226px;}
+  31% {left:948px; top:344px;}
+  32% {left:373px; top:212px;}
+  33% {left:1247px; top:702px;}
+  34% {left:1265px; top:494px;}
+  35% {left:268px; top:131px;}
+  36% {left:1281px; top:378px;}
+  37% {left:1419px; top:332px;}
+  38% {left:1073px; top:300px;}
+  39% {left:476px; top:601px;}
+  40% {left:907px; top:265px;}
+  41% {left:287px; top:663px;}
+  42% {left:1345px; top:85px;}
+  43% {left:285px; top:97px;}
+  44% {left:346px; top:358px;}
+  45% {left:856px; top:59px;}
+  46% {left:77px; top:679px;}
+  47% {left:22px; top:488px;}
+  48% {left:967px; top:8px;}
+  49% {left:224px; top:241px;}
+  50% {left:848px; top:260px;}
+  51% {left:858px; top:151px;}
+  52% {left:636px; top:515px;}
+  53% {left:1204px; top:327px;}
+  54% {left:294px; top:115px;}
+  55% {left:97px; top:329px;}
+  56% {left:1396px; top:95px;}
+  57% {left:1139px; top:675px;}
+  58% {left:182px; top:210px;}
+  59% {left:1121px; top:20px;}
+  60% {left:253px; top:495px;}
+  61% {left:1323px; top:550px;}
+  62% {left:553px; top:529px;}
+  63% {left:32px; top:0px;}
+  64% {left:1346px; top:57px;}
+  65% {left:943px; top:116px;}
+  66% {left:230px; top:445px;}
+  67% {left:303px; top:506px;}
+  68% {left:131px; top:481px;}
+  69% {left:112px; top:165px;}
+  70% {left:127px; top:238px;}
+  71% {left:1341px; top:582px;}
+  72% {left:254px; top:688px;}
+  73% {left:114px; top:671px;}
+  74% {left:752px; top:150px;}
+  75% {left:573px; top:2px;}
+  76% {left:215px; top:143px;}
+  77% {left:721px; top:727px;}
+  78% {left:448px; top:645px;}
+  79% {left:891px; top:728px;}
+  80% {left:1404px; top:443px;}
+  81% {left:775px; top:131px;}
+  82% {left:780px; top:540px;}
+  83% {left:168px; top:546px;}
+  84% {left:759px; top:47px;}
+  85% {left:393px; top:577px;}
+  86% {left:568px; top:189px;}
+  87% {left:716px; top:613px;}
+  88% {left:444px; top:590px;}
+  89% {left:1208px; top:275px;}
+  90% {left:298px; top:489px;}
+  91% {left:230px; top:707px;}
+  92% {left:19px; top:302px;}
+  93% {left:1138px; top:451px;}
+  94% {left:1401px; top:119px;}
+  95% {left:445px; top:47px;}
+  96% {left:433px; top:651px;}
+  97% {left:1182px; top:651px;}
+  98% {left:534px; top:698px;}
+  99% {left:587px; top:500px;}
+  100% {left:376px; top:443px;}
+}
+
+.error8 {
+  animation-name: error8;
+  animation-duration: 70s;
+}
+
+@keyframes error8 {
+  0% {left:983px; top:61px;}
+  1% {left:418px; top:154px;}
+  2% {left:670px; top:309px;}
+  3% {left:782px; top:161px;}
+  4% {left:631px; top:268px;}
+  5% {left:30px; top:317px;}
+  6% {left:101px; top:98px;}
+  7% {left:442px; top:85px;}
+  8% {left:49px; top:311px;}
+  9% {left:957px; top:322px;}
+  10% {left:576px; top:57px;}
+  11% {left:1247px; top:582px;}
+  12% {left:488px; top:425px;}
+  13% {left:986px; top:193px;}
+  14% {left:1148px; top:170px;}
+  15% {left:836px; top:112px;}
+  16% {left:0px; top:17px;}
+  17% {left:475px; top:301px;}
+  18% {left:995px; top:316px;}
+  19% {left:722px; top:486px;}
+  20% {left:1410px; top:333px;}
+  21% {left:1325px; top:222px;}
+  22% {left:300px; top:671px;}
+  23% {left:77px; top:658px;}
+  24% {left:480px; top:252px;}
+  25% {left:378px; top:215px;}
+  26% {left:986px; top:651px;}
+  27% {left:758px; top:569px;}
+  28% {left:100px; top:163px;}
+  29% {left:1265px; top:91px;}
+  30% {left:199px; top:571px;}
+  31% {left:1260px; top:119px;}
+  32% {left:974px; top:723px;}
+  33% {left:889px; top:511px;}
+  34% {left:967px; top:319px;}
+  35% {left:1086px; top:625px;}
+  36% {left:158px; top:699px;}
+  37% {left:1361px; top:579px;}
+  38% {left:523px; top:293px;}
+  39% {left:1157px; top:412px;}
+  40% {left:838px; top:567px;}
+  41% {left:124px; top:444px;}
+  42% {left:206px; top:501px;}
+  43% {left:679px; top:713px;}
+  44% {left:893px; top:698px;}
+  45% {left:805px; top:616px;}
+  46% {left:251px; top:558px;}
+  47% {left:631px; top:138px;}
+  48% {left:1340px; top:5px;}
+  49% {left:77px; top:654px;}
+  50% {left:358px; top:563px;}
+  51% {left:1080px; top:346px;}
+  52% {left:727px; top:294px;}
+  53% {left:911px; top:635px;}
+  54% {left:1390px; top:363px;}
+  55% {left:1295px; top:551px;}
+  56% {left:662px; top:415px;}
+  57% {left:394px; top:407px;}
+  58% {left:473px; top:285px;}
+  59% {left:854px; top:666px;}
+  60% {left:1367px; top:0px;}
+  61% {left:1375px; top:625px;}
+  62% {left:1329px; top:129px;}
+  63% {left:183px; top:30px;}
+  64% {left:846px; top:661px;}
+  65% {left:129px; top:179px;}
+  66% {left:432px; top:182px;}
+  67% {left:1209px; top:431px;}
+  68% {left:654px; top:224px;}
+  69% {left:642px; top:86px;}
+  70% {left:628px; top:334px;}
+  71% {left:728px; top:710px;}
+  72% {left:952px; top:491px;}
+  73% {left:643px; top:236px;}
+  74% {left:626px; top:257px;}
+  75% {left:825px; top:111px;}
+  76% {left:979px; top:715px;}
+  77% {left:297px; top:21px;}
+  78% {left:251px; top:546px;}
+  79% {left:112px; top:159px;}
+  80% {left:790px; top:96px;}
+  81% {left:526px; top:389px;}
+  82% {left:230px; top:90px;}
+  83% {left:270px; top:628px;}
+  84% {left:372px; top:372px;}
+  85% {left:868px; top:271px;}
+  86% {left:152px; top:211px;}
+  87% {left:971px; top:226px;}
+  88% {left:368px; top:655px;}
+  89% {left:460px; top:158px;}
+  90% {left:1032px; top:306px;}
+  91% {left:674px; top:469px;}
+  92% {left:1023px; top:210px;}
+  93% {left:541px; top:17px;}
+  94% {left:863px; top:410px;}
+  95% {left:1326px; top:524px;}
+  96% {left:249px; top:332px;}
+  97% {left:844px; top:244px;}
+  98% {left:1060px; top:15px;}
+  99% {left:820px; top:404px;}
+  100% {left:389px; top:672px;}
+}
+
+.error9 {
+  animation-name: error9;
+  animation-duration: 100s;
+}
+
+@keyframes error9 {
+  0% {left:562px; top:138px;}
+  1% {left:1034px; top:114px;}
+  2% {left:224px; top:114px;}
+  3% {left:179px; top:454px;}
+  4% {left:1359px; top:500px;}
+  5% {left:1235px; top:344px;}
+  6% {left:956px; top:70px;}
+  7% {left:849px; top:554px;}
+  8% {left:553px; top:106px;}
+  9% {left:990px; top:82px;}
+  10% {left:1158px; top:365px;}
+  11% {left:577px; top:471px;}
+  12% {left:777px; top:453px;}
+  13% {left:895px; top:426px;}
+  14% {left:1109px; top:462px;}
+  15% {left:329px; top:482px;}
+  16% {left:645px; top:306px;}
+  17% {left:1305px; top:711px;}
+  18% {left:695px; top:143px;}
+  19% {left:121px; top:145px;}
+  20% {left:1298px; top:289px;}
+  21% {left:46px; top:79px;}
+  22% {left:420px; top:495px;}
+  23% {left:291px; top:399px;}
+  24% {left:1154px; top:724px;}
+  25% {left:54px; top:424px;}
+  26% {left:716px; top:402px;}
+  27% {left:642px; top:709px;}
+  28% {left:1249px; top:71px;}
+  29% {left:248px; top:124px;}
+  30% {left:822px; top:115px;}
+  31% {left:1392px; top:598px;}
+  32% {left:814px; top:382px;}
+  33% {left:905px; top:722px;}
+  34% {left:466px; top:367px;}
+  35% {left:592px; top:483px;}
+  36% {left:1318px; top:73px;}
+  37% {left:611px; top:643px;}
+  38% {left:126px; top:381px;}
+  39% {left:1396px; top:19px;}
+  40% {left:1192px; top:518px;}
+  41% {left:204px; top:89px;}
+  42% {left:998px; top:641px;}
+  43% {left:1367px; top:156px;}
+  44% {left:49px; top:302px;}
+  45% {left:1377px; top:257px;}
+  46% {left:588px; top:690px;}
+  47% {left:386px; top:339px;}
+  48% {left:509px; top:565px;}
+  49% {left:1281px; top:111px;}
+  50% {left:1177px; top:140px;}
+  51% {left:1267px; top:402px;}
+  52% {left:433px; top:555px;}
+  53% {left:1102px; top:577px;}
+  54% {left:1239px; top:594px;}
+  55% {left:448px; top:221px;}
+  56% {left:180px; top:106px;}
+  57% {left:1353px; top:470px;}
+  58% {left:963px; top:205px;}
+  59% {left:1062px; top:261px;}
+  60% {left:273px; top:529px;}
+  61% {left:1114px; top:667px;}
+  62% {left:1366px; top:485px;}
+  63% {left:1135px; top:55px;}
+  64% {left:1359px; top:28px;}
+  65% {left:344px; top:325px;}
+  66% {left:303px; top:487px;}
+  67% {left:481px; top:666px;}
+  68% {left:1197px; top:280px;}
+  69% {left:64px; top:257px;}
+  70% {left:207px; top:551px;}
+  71% {left:1147px; top:85px;}
+  72% {left:1324px; top:18px;}
+  73% {left:970px; top:95px;}
+  74% {left:559px; top:317px;}
+  75% {left:1410px; top:465px;}
+  76% {left:1345px; top:0px;}
+  77% {left:983px; top:425px;}
+  78% {left:1093px; top:9px;}
+  79% {left:755px; top:571px;}
+  80% {left:286px; top:315px;}
+  81% {left:858px; top:497px;}
+  82% {left:314px; top:716px;}
+  83% {left:216px; top:408px;}
+  84% {left:608px; top:127px;}
+  85% {left:934px; top:209px;}
+  86% {left:247px; top:170px;}
+  87% {left:543px; top:472px;}
+  88% {left:968px; top:537px;}
+  89% {left:245px; top:79px;}
+  90% {left:1196px; top:396px;}
+  91% {left:663px; top:130px;}
+  92% {left:1360px; top:480px;}
+  93% {left:849px; top:302px;}
+  94% {left:1353px; top:332px;}
+  95% {left:10px; top:366px;}
+  96% {left:559px; top:599px;}
+  97% {left:481px; top:431px;}
+  98% {left:456px; top:99px;}
+  99% {left:880px; top:725px;}
+  100% {left:1074px; top:424px;}
+}
+
+.error10 {
+  animation-name: error10;
+  animation-duration: 80s;
+}
+
+@keyframes error10 {
+  0% {left:253px; top:206px;}
+  1% {left:660px; top:557px;}
+  2% {left:587px; top:359px;}
+  3% {left:1070px; top:351px;}
+  4% {left:461px; top:619px;}
+  5% {left:1303px; top:527px;}
+  6% {left:310px; top:512px;}
+  7% {left:715px; top:589px;}
+  8% {left:377px; top:610px;}
+  9% {left:297px; top:537px;}
+  10% {left:508px; top:655px;}
+  11% {left:1082px; top:72px;}
+  12% {left:1324px; top:60px;}
+  13% {left:1219px; top:328px;}
+  14% {left:1392px; top:523px;}
+  15% {left:4px; top:474px;}
+  16% {left:481px; top:610px;}
+  17% {left:427px; top:597px;}
+  18% {left:299px; top:322px;}
+  19% {left:953px; top:195px;}
+  20% {left:1301px; top:6px;}
+  21% {left:965px; top:679px;}
+  22% {left:14px; top:218px;}
+  23% {left:1272px; top:396px;}
+  24% {left:180px; top:510px;}
+  25% {left:214px; top:400px;}
+  26% {left:125px; top:58px;}
+  27% {left:1250px; top:365px;}
+  28% {left:1302px; top:529px;}
+  29% {left:1000px; top:62px;}
+  30% {left:816px; top:218px;}
+  31% {left:254px; top:20px;}
+  32% {left:1253px; top:77px;}
+  33% {left:925px; top:52px;}
+  34% {left:1135px; top:600px;}
+  35% {left:1005px; top:675px;}
+  36% {left:177px; top:625px;}
+  37% {left:703px; top:461px;}
+  38% {left:838px; top:223px;}
+  39% {left:533px; top:402px;}
+  40% {left:842px; top:209px;}
+  41% {left:845px; top:123px;}
+  42% {left:429px; top:664px;}
+  43% {left:1377px; top:77px;}
+  44% {left:453px; top:364px;}
+  45% {left:379px; top:107px;}
+  46% {left:794px; top:467px;}
+  47% {left:938px; top:681px;}
+  48% {left:512px; top:646px;}
+  49% {left:374px; top:700px;}
+  50% {left:222px; top:239px;}
+  51% {left:1163px; top:0px;}
+  52% {left:901px; top:75px;}
+  53% {left:1162px; top:282px;}
+  54% {left:713px; top:616px;}
+  55% {left:138px; top:334px;}
+  56% {left:501px; top:495px;}
+  57% {left:597px; top:646px;}
+  58% {left:211px; top:109px;}
+  59% {left:907px; top:552px;}
+  60% {left:628px; top:437px;}
+  61% {left:790px; top:241px;}
+  62% {left:173px; top:43px;}
+  63% {left:1151px; top:674px;}
+  64% {left:418px; top:375px;}
+  65% {left:1383px; top:119px;}
+  66% {left:241px; top:506px;}
+  67% {left:557px; top:256px;}
+  68% {left:33px; top:276px;}
+  69% {left:238px; top:230px;}
+  70% {left:564px; top:156px;}
+  71% {left:523px; top:425px;}
+  72% {left:856px; top:38px;}
+  73% {left:945px; top:689px;}
+  74% {left:81px; top:98px;}
+  75% {left:846px; top:728px;}
+  76% {left:1189px; top:238px;}
+  77% {left:699px; top:440px;}
+  78% {left:895px; top:687px;}
+  79% {left:1222px; top:611px;}
+  80% {left:1004px; top:633px;}
+  81% {left:233px; top:621px;}
+  82% {left:1251px; top:245px;}
+  83% {left:39px; top:209px;}
+  84% {left:1066px; top:426px;}
+  85% {left:949px; top:9px;}
+  86% {left:1219px; top:629px;}
+  87% {left:300px; top:356px;}
+  88% {left:561px; top:240px;}
+  89% {left:96px; top:306px;}
+  90% {left:763px; top:222px;}
+  91% {left:449px; top:138px;}
+  92% {left:41px; top:328px;}
+  93% {left:490px; top:655px;}
+  94% {left:950px; top:283px;}
+  95% {left:1019px; top:187px;}
+  96% {left:1150px; top:726px;}
+  97% {left:1394px; top:266px;}
+  98% {left:644px; top:164px;}
+  99% {left:1059px; top:148px;}
+  100% {left:839px; top:308px;}
+}
+
+.error11 {
+  animation-name: error11;
+  animation-duration: 90s;
+}
+
+@keyframes error11 {
+  0% {left:1236px; top:563px;}
+  1% {left:446px; top:149px;}
+  2% {left:185px; top:234px;}
+  3% {left:1136px; top:238px;}
+  4% {left:24px; top:18px;}
+  5% {left:533px; top:444px;}
+  6% {left:1052px; top:130px;}
+  7% {left:202px; top:573px;}
+  8% {left:769px; top:118px;}
+  9% {left:949px; top:101px;}
+  10% {left:670px; top:693px;}
+  11% {left:802px; top:135px;}
+  12% {left:1350px; top:165px;}
+  13% {left:179px; top:205px;}
+  14% {left:1350px; top:87px;}
+  15% {left:1015px; top:544px;}
+  16% {left:799px; top:43px;}
+  17% {left:794px; top:157px;}
+  18% {left:981px; top:178px;}
+  19% {left:135px; top:319px;}
+  20% {left:833px; top:502px;}
+  21% {left:455px; top:572px;}
+  22% {left:494px; top:456px;}
+  23% {left:132px; top:443px;}
+  24% {left:164px; top:570px;}
+  25% {left:663px; top:104px;}
+  26% {left:272px; top:635px;}
+  27% {left:825px; top:62px;}
+  28% {left:432px; top:681px;}
+  29% {left:88px; top:496px;}
+  30% {left:295px; top:514px;}
+  31% {left:452px; top:464px;}
+  32% {left:418px; top:437px;}
+  33% {left:385px; top:594px;}
+  34% {left:926px; top:671px;}
+  35% {left:169px; top:367px;}
+  36% {left:24px; top:311px;}
+  37% {left:142px; top:497px;}
+  38% {left:175px; top:410px;}
+  39% {left:1054px; top:485px;}
+  40% {left:385px; top:729px;}
+  41% {left:572px; top:123px;}
+  42% {left:143px; top:108px;}
+  43% {left:1412px; top:181px;}
+  44% {left:852px; top:390px;}
+  45% {left:750px; top:207px;}
+  46% {left:111px; top:514px;}
+  47% {left:1170px; top:415px;}
+  48% {left:1270px; top:363px;}
+  49% {left:1144px; top:634px;}
+  50% {left:1072px; top:403px;}
+  51% {left:169px; top:250px;}
+  52% {left:1290px; top:439px;}
+  53% {left:45px; top:172px;}
+  54% {left:349px; top:645px;}
+  55% {left:1130px; top:379px;}
+  56% {left:472px; top:589px;}
+  57% {left:944px; top:258px;}
+  58% {left:490px; top:396px;}
+  59% {left:921px; top:341px;}
+  60% {left:1349px; top:725px;}
+  61% {left:105px; top:334px;}
+  62% {left:500px; top:621px;}
+  63% {left:621px; top:373px;}
+  64% {left:914px; top:642px;}
+  65% {left:1025px; top:33px;}
+  66% {left:675px; top:11px;}
+  67% {left:380px; top:522px;}
+  68% {left:1265px; top:164px;}
+  69% {left:1044px; top:628px;}
+  70% {left:449px; top:256px;}
+  71% {left:914px; top:194px;}
+  72% {left:565px; top:645px;}
+  73% {left:635px; top:136px;}
+  74% {left:1218px; top:692px;}
+  75% {left:428px; top:11px;}
+  76% {left:337px; top:476px;}
+  77% {left:487px; top:346px;}
+  78% {left:253px; top:198px;}
+  79% {left:617px; top:733px;}
+  80% {left:710px; top:597px;}
+  81% {left:1066px; top:682px;}
+  82% {left:108px; top:598px;}
+  83% {left:204px; top:379px;}
+  84% {left:783px; top:324px;}
+  85% {left:920px; top:473px;}
+  86% {left:1125px; top:733px;}
+  87% {left:391px; top:532px;}
+  88% {left:1118px; top:526px;}
+  89% {left:800px; top:471px;}
+  90% {left:1128px; top:577px;}
+  91% {left:1418px; top:575px;}
+  92% {left:1342px; top:625px;}
+  93% {left:114px; top:316px;}
+  94% {left:179px; top:702px;}
+  95% {left:472px; top:224px;}
+  96% {left:188px; top:252px;}
+  97% {left:178px; top:0px;}
+  98% {left:951px; top:163px;}
+  99% {left:462px; top:435px;}
+  100% {left:157px; top:415px;}
+}
+
+.error12 {
+  animation-name: error12;
+  animation-duration: 100s;
+}
+
+@keyframes error12 {
+  0% {left:280px; top:0px;}
+  1% {left:729px; top:646px;}
+  2% {left:1258px; top:672px;}
+  3% {left:690px; top:202px;}
+  4% {left:1114px; top:376px;}
+  5% {left:75px; top:725px;}
+  6% {left:917px; top:550px;}
+  7% {left:626px; top:318px;}
+  8% {left:999px; top:657px;}
+  9% {left:1263px; top:522px;}
+  10% {left:701px; top:661px;}
+  11% {left:589px; top:165px;}
+  12% {left:1198px; top:433px;}
+  13% {left:1355px; top:30px;}
+  14% {left:20px; top:532px;}
+  15% {left:303px; top:626px;}
+  16% {left:395px; top:113px;}
+  17% {left:174px; top:261px;}
+  18% {left:1070px; top:96px;}
+  19% {left:1142px; top:163px;}
+  20% {left:791px; top:396px;}
+  21% {left:1408px; top:30px;}
+  22% {left:1012px; top:96px;}
+  23% {left:794px; top:132px;}
+  24% {left:1258px; top:258px;}
+  25% {left:233px; top:287px;}
+  26% {left:620px; top:657px;}
+  27% {left:792px; top:240px;}
+  28% {left:157px; top:614px;}
+  29% {left:1357px; top:366px;}
+  30% {left:1338px; top:476px;}
+  31% {left:696px; top:638px;}
+  32% {left:1110px; top:47px;}
+  33% {left:1276px; top:421px;}
+  34% {left:825px; top:453px;}
+  35% {left:612px; top:464px;}
+  36% {left:432px; top:75px;}
+  37% {left:818px; top:168px;}
+  38% {left:682px; top:706px;}
+  39% {left:1412px; top:5px;}
+  40% {left:1397px; top:362px;}
+  41% {left:579px; top:636px;}
+  42% {left:379px; top:488px;}
+  43% {left:691px; top:167px;}
+  44% {left:114px; top:393px;}
+  45% {left:1404px; top:290px;}
+  46% {left:1212px; top:186px;}
+  47% {left:725px; top:226px;}
+  48% {left:1067px; top:433px;}
+  49% {left:990px; top:171px;}
+  50% {left:807px; top:296px;}
+  51% {left:858px; top:231px;}
+  52% {left:42px; top:126px;}
+  53% {left:808px; top:260px;}
+  54% {left:385px; top:471px;}
+  55% {left:277px; top:465px;}
+  56% {left:606px; top:60px;}
+  57% {left:808px; top:221px;}
+  58% {left:0px; top:151px;}
+  59% {left:281px; top:102px;}
+  60% {left:695px; top:6px;}
+  61% {left:779px; top:164px;}
+  62% {left:153px; top:280px;}
+  63% {left:102px; top:673px;}
+  64% {left:635px; top:89px;}
+  65% {left:1308px; top:624px;}
+  66% {left:460px; top:612px;}
+  67% {left:923px; top:186px;}
+  68% {left:888px; top:500px;}
+  69% {left:994px; top:596px;}
+  70% {left:1347px; top:656px;}
+  71% {left:304px; top:79px;}
+  72% {left:651px; top:486px;}
+  73% {left:1053px; top:90px;}
+  74% {left:610px; top:58px;}
+  75% {left:834px; top:682px;}
+  76% {left:380px; top:32px;}
+  77% {left:57px; top:124px;}
+  78% {left:1283px; top:46px;}
+  79% {left:941px; top:518px;}
+  80% {left:407px; top:581px;}
+  81% {left:52px; top:306px;}
+  82% {left:475px; top:173px;}
+  83% {left:1288px; top:172px;}
+  84% {left:672px; top:5px;}
+  85% {left:850px; top:134px;}
+  86% {left:1318px; top:670px;}
+  87% {left:1121px; top:711px;}
+  88% {left:463px; top:601px;}
+  89% {left:270px; top:454px;}
+  90% {left:1193px; top:515px;}
+  91% {left:1295px; top:383px;}
+  92% {left:635px; top:267px;}
+  93% {left:530px; top:32px;}
+  94% {left:641px; top:388px;}
+  95% {left:1304px; top:377px;}
+  96% {left:35px; top:250px;}
+  97% {left:223px; top:408px;}
+  98% {left:213px; top:279px;}
+  99% {left:689px; top:3px;}
+  100% {left:778px; top:9px;}
+}
+
+.error13 {
+  animation-name: error13;
+  animation-duration: 60s;
+}
+
+@keyframes error13 {
+  0% {left:113px; top:428px;}
+  1% {left:429px; top:331px;}
+  2% {left:807px; top:388px;}
+  3% {left:496px; top:470px;}
+  4% {left:863px; top:334px;}
+  5% {left:691px; top:420px;}
+  6% {left:395px; top:465px;}
+  7% {left:1094px; top:471px;}
+  8% {left:228px; top:717px;}
+  9% {left:1142px; top:205px;}
+  10% {left:451px; top:57px;}
+  11% {left:395px; top:628px;}
+  12% {left:817px; top:174px;}
+  13% {left:998px; top:694px;}
+  14% {left:1277px; top:7px;}
+  15% {left:710px; top:691px;}
+  16% {left:94px; top:230px;}
+  17% {left:406px; top:364px;}
+  18% {left:60px; top:443px;}
+  19% {left:436px; top:577px;}
+  20% {left:1344px; top:374px;}
+  21% {left:979px; top:380px;}
+  22% {left:1286px; top:446px;}
+  23% {left:1081px; top:565px;}
+  24% {left:510px; top:60px;}
+  25% {left:1165px; top:451px;}
+  26% {left:409px; top:587px;}
+  27% {left:869px; top:294px;}
+  28% {left:142px; top:486px;}
+  29% {left:675px; top:247px;}
+  30% {left:807px; top:247px;}
+  31% {left:367px; top:73px;}
+  32% {left:219px; top:139px;}
+  33% {left:1342px; top:359px;}
+  34% {left:648px; top:59px;}
+  35% {left:415px; top:406px;}
+  36% {left:31px; top:270px;}
+  37% {left:919px; top:149px;}
+  38% {left:207px; top:650px;}
+  39% {left:101px; top:92px;}
+  40% {left:18px; top:541px;}
+  41% {left:1316px; top:407px;}
+  42% {left:1351px; top:26px;}
+  43% {left:636px; top:191px;}
+  44% {left:987px; top:349px;}
+  45% {left:672px; top:316px;}
+  46% {left:190px; top:319px;}
+  47% {left:815px; top:284px;}
+  48% {left:503px; top:375px;}
+  49% {left:543px; top:503px;}
+  50% {left:625px; top:713px;}
+  51% {left:1319px; top:59px;}
+  52% {left:644px; top:680px;}
+  53% {left:554px; top:642px;}
+  54% {left:431px; top:239px;}
+  55% {left:991px; top:504px;}
+  56% {left:1422px; top:76px;}
+  57% {left:237px; top:5px;}
+  58% {left:937px; top:633px;}
+  59% {left:972px; top:139px;}
+  60% {left:516px; top:716px;}
+  61% {left:1102px; top:84px;}
+  62% {left:717px; top:524px;}
+  63% {left:1410px; top:12px;}
+  64% {left:929px; top:68px;}
+  65% {left:168px; top:641px;}
+  66% {left:1350px; top:373px;}
+  67% {left:173px; top:439px;}
+  68% {left:406px; top:687px;}
+  69% {left:1022px; top:616px;}
+  70% {left:868px; top:602px;}
+  71% {left:1065px; top:39px;}
+  72% {left:8px; top:454px;}
+  73% {left:960px; top:16px;}
+  74% {left:237px; top:153px;}
+  75% {left:411px; top:269px;}
+  76% {left:927px; top:103px;}
+  77% {left:1322px; top:275px;}
+  78% {left:1020px; top:507px;}
+  79% {left:993px; top:204px;}
+  80% {left:235px; top:602px;}
+  81% {left:528px; top:546px;}
+  82% {left:473px; top:686px;}
+  83% {left:75px; top:92px;}
+  84% {left:44px; top:627px;}
+  85% {left:396px; top:726px;}
+  86% {left:1049px; top:39px;}
+  87% {left:1177px; top:303px;}
+  88% {left:1209px; top:511px;}
+  89% {left:992px; top:684px;}
+  90% {left:1361px; top:57px;}
+  91% {left:949px; top:450px;}
+  92% {left:291px; top:90px;}
+  93% {left:501px; top:350px;}
+  94% {left:1044px; top:125px;}
+  95% {left:1397px; top:697px;}
+  96% {left:797px; top:100px;}
+  97% {left:1070px; top:70px;}
+  98% {left:172px; top:576px;}
+  99% {left:1155px; top:92px;}
+  100% {left:1420px; top:108px;}
+}
+
+.error14 {
+  animation-name: error14;
+  animation-duration: 70s;
+}
+
+@keyframes error14 {
+  0% {left:968px; top:444px;}
+  1% {left:1345px; top:10px;}
+  2% {left:1141px; top:528px;}
+  3% {left:905px; top:258px;}
+  4% {left:866px; top:292px;}
+  5% {left:1162px; top:210px;}
+  6% {left:1310px; top:541px;}
+  7% {left:230px; top:635px;}
+  8% {left:1201px; top:367px;}
+  9% {left:731px; top:170px;}
+  10% {left:1237px; top:194px;}
+  11% {left:582px; top:124px;}
+  12% {left:331px; top:505px;}
+  13% {left:941px; top:694px;}
+  14% {left:1028px; top:557px;}
+  15% {left:349px; top:287px;}
+  16% {left:798px; top:507px;}
+  17% {left:1047px; top:121px;}
+  18% {left:111px; top:201px;}
+  19% {left:837px; top:441px;}
+  20% {left:379px; top:684px;}
+  21% {left:374px; top:285px;}
+  22% {left:1413px; top:715px;}
+  23% {left:195px; top:249px;}
+  24% {left:624px; top:19px;}
+  25% {left:330px; top:452px;}
+  26% {left:479px; top:286px;}
+  27% {left:525px; top:196px;}
+  28% {left:1291px; top:5px;}
+  29% {left:407px; top:443px;}
+  30% {left:566px; top:132px;}
+  31% {left:160px; top:670px;}
+  32% {left:1353px; top:539px;}
+  33% {left:278px; top:197px;}
+  34% {left:749px; top:405px;}
+  35% {left:1022px; top:727px;}
+  36% {left:48px; top:716px;}
+  37% {left:479px; top:438px;}
+  38% {left:788px; top:550px;}
+  39% {left:149px; top:211px;}
+  40% {left:790px; top:47px;}
+  41% {left:170px; top:165px;}
+  42% {left:785px; top:565px;}
+  43% {left:1132px; top:530px;}
+  44% {left:938px; top:364px;}
+  45% {left:1363px; top:306px;}
+  46% {left:440px; top:225px;}
+  47% {left:908px; top:318px;}
+  48% {left:222px; top:441px;}
+  49% {left:1043px; top:516px;}
+  50% {left:519px; top:144px;}
+  51% {left:1061px; top:290px;}
+  52% {left:529px; top:288px;}
+  53% {left:18px; top:563px;}
+  54% {left:288px; top:119px;}
+  55% {left:1223px; top:578px;}
+  56% {left:659px; top:158px;}
+  57% {left:626px; top:483px;}
+  58% {left:740px; top:659px;}
+  59% {left:1328px; top:31px;}
+  60% {left:624px; top:236px;}
+  61% {left:806px; top:126px;}
+  62% {left:779px; top:639px;}
+  63% {left:285px; top:195px;}
+  64% {left:491px; top:366px;}
+  65% {left:222px; top:582px;}
+  66% {left:212px; top:711px;}
+  67% {left:903px; top:711px;}
+  68% {left:937px; top:400px;}
+  69% {left:901px; top:7px;}
+  70% {left:895px; top:271px;}
+  71% {left:848px; top:158px;}
+  72% {left:488px; top:158px;}
+  73% {left:154px; top:689px;}
+  74% {left:553px; top:27px;}
+  75% {left:299px; top:325px;}
+  76% {left:1363px; top:95px;}
+  77% {left:1024px; top:620px;}
+  78% {left:528px; top:649px;}
+  79% {left:198px; top:532px;}
+  80% {left:471px; top:328px;}
+  81% {left:339px; top:94px;}
+  82% {left:689px; top:93px;}
+  83% {left:658px; top:267px;}
+  84% {left:729px; top:682px;}
+  85% {left:876px; top:81px;}
+  86% {left:41px; top:234px;}
+  87% {left:1398px; top:7px;}
+  88% {left:1223px; top:462px;}
+  89% {left:1054px; top:189px;}
+  90% {left:945px; top:297px;}
+  91% {left:1034px; top:247px;}
+  92% {left:45px; top:348px;}
+  93% {left:475px; top:403px;}
+  94% {left:891px; top:197px;}
+  95% {left:143px; top:52px;}
+  96% {left:1165px; top:111px;}
+  97% {left:1421px; top:255px;}
+  98% {left:135px; top:33px;}
+  99% {left:823px; top:12px;}
+  100% {left:1381px; top:294px;}
+}
+
+.error15 {
+  animation-name: error15;
+  animation-duration: 80s;
+}
+
+@keyframes error15 {
+  0% {left:858px; top:391px;}
+  1% {left:958px; top:592px;}
+  2% {left:370px; top:625px;}
+  3% {left:588px; top:389px;}
+  4% {left:341px; top:537px;}
+  5% {left:933px; top:76px;}
+  6% {left:859px; top:614px;}
+  7% {left:373px; top:172px;}
+  8% {left:745px; top:486px;}
+  9% {left:90px; top:442px;}
+  10% {left:938px; top:453px;}
+  11% {left:157px; top:625px;}
+  12% {left:78px; top:384px;}
+  13% {left:32px; top:524px;}
+  14% {left:747px; top:428px;}
+  15% {left:408px; top:66px;}
+  16% {left:1232px; top:634px;}
+  17% {left:1421px; top:633px;}
+  18% {left:1154px; top:160px;}
+  19% {left:190px; top:367px;}
+  20% {left:131px; top:699px;}
+  21% {left:237px; top:40px;}
+  22% {left:1021px; top:286px;}
+  23% {left:421px; top:670px;}
+  24% {left:851px; top:372px;}
+  25% {left:1144px; top:571px;}
+  26% {left:138px; top:733px;}
+  27% {left:129px; top:187px;}
+  28% {left:1417px; top:662px;}
+  29% {left:1049px; top:217px;}
+  30% {left:1046px; top:669px;}
+  31% {left:998px; top:223px;}
+  32% {left:21px; top:209px;}
+  33% {left:447px; top:127px;}
+  34% {left:897px; top:464px;}
+  35% {left:191px; top:416px;}
+  36% {left:1400px; top:115px;}
+  37% {left:782px; top:649px;}
+  38% {left:627px; top:303px;}
+  39% {left:1068px; top:317px;}
+  40% {left:674px; top:110px;}
+  41% {left:1185px; top:444px;}
+  42% {left:805px; top:296px;}
+  43% {left:1397px; top:149px;}
+  44% {left:548px; top:199px;}
+  45% {left:1226px; top:635px;}
+  46% {left:387px; top:146px;}
+  47% {left:1393px; top:678px;}
+  48% {left:297px; top:596px;}
+  49% {left:6px; top:47px;}
+  50% {left:321px; top:411px;}
+  51% {left:748px; top:444px;}
+  52% {left:951px; top:410px;}
+  53% {left:872px; top:252px;}
+  54% {left:815px; top:153px;}
+  55% {left:1147px; top:218px;}
+  56% {left:595px; top:701px;}
+  57% {left:353px; top:265px;}
+  58% {left:1275px; top:120px;}
+  59% {left:264px; top:671px;}
+  60% {left:802px; top:607px;}
+  61% {left:1389px; top:436px;}
+  62% {left:21px; top:192px;}
+  63% {left:129px; top:145px;}
+  64% {left:600px; top:204px;}
+  65% {left:447px; top:437px;}
+  66% {left:281px; top:13px;}
+  67% {left:51px; top:239px;}
+  68% {left:961px; top:622px;}
+  69% {left:675px; top:189px;}
+  70% {left:586px; top:483px;}
+  71% {left:237px; top:392px;}
+  72% {left:1345px; top:362px;}
+  73% {left:613px; top:26px;}
+  74% {left:169px; top:547px;}
+  75% {left:1234px; top:636px;}
+  76% {left:83px; top:117px;}
+  77% {left:292px; top:118px;}
+  78% {left:573px; top:509px;}
+  79% {left:45px; top:304px;}
+  80% {left:503px; top:435px;}
+  81% {left:824px; top:567px;}
+  82% {left:960px; top:178px;}
+  83% {left:1102px; top:185px;}
+  84% {left:1003px; top:417px;}
+  85% {left:359px; top:372px;}
+  86% {left:117px; top:196px;}
+  87% {left:706px; top:367px;}
+  88% {left:1285px; top:495px;}
+  89% {left:437px; top:103px;}
+  90% {left:1229px; top:651px;}
+  91% {left:522px; top:716px;}
+  92% {left:1038px; top:453px;}
+  93% {left:1371px; top:237px;}
+  94% {left:85px; top:496px;}
+  95% {left:21px; top:85px;}
+  96% {left:340px; top:389px;}
+  97% {left:191px; top:203px;}
+  98% {left:96px; top:189px;}
+  99% {left:233px; top:337px;}
+  100% {left:1374px; top:581px;}
+}
+
+.error16 {
+  animation-name: error16;
+  animation-duration: 90s;
+}
+
+@keyframes error16 {
+  0% {left:1125px; top:672px;}
+  1% {left:978px; top:587px;}
+  2% {left:115px; top:212px;}
+  3% {left:918px; top:610px;}
+  4% {left:1118px; top:603px;}
+  5% {left:964px; top:309px;}
+  6% {left:684px; top:223px;}
+  7% {left:1094px; top:604px;}
+  8% {left:799px; top:387px;}
+  9% {left:1197px; top:463px;}
+  10% {left:1296px; top:190px;}
+  11% {left:841px; top:729px;}
+  12% {left:505px; top:171px;}
+  13% {left:1307px; top:302px;}
+  14% {left:23px; top:343px;}
+  15% {left:609px; top:575px;}
+  16% {left:298px; top:726px;}
+  17% {left:975px; top:531px;}
+  18% {left:1139px; top:637px;}
+  19% {left:1023px; top:47px;}
+  20% {left:1249px; top:7px;}
+  21% {left:787px; top:602px;}
+  22% {left:1229px; top:175px;}
+  23% {left:1191px; top:36px;}
+  24% {left:1306px; top:584px;}
+  25% {left:1327px; top:548px;}
+  26% {left:878px; top:416px;}
+  27% {left:1313px; top:253px;}
+  28% {left:115px; top:733px;}
+  29% {left:164px; top:336px;}
+  30% {left:486px; top:437px;}
+  31% {left:1315px; top:132px;}
+  32% {left:666px; top:98px;}
+  33% {left:153px; top:297px;}
+  34% {left:1199px; top:216px;}
+  35% {left:535px; top:694px;}
+  36% {left:1297px; top:57px;}
+  37% {left:257px; top:649px;}
+  38% {left:631px; top:660px;}
+  39% {left:1081px; top:366px;}
+  40% {left:504px; top:185px;}
+  41% {left:246px; top:381px;}
+  42% {left:1415px; top:12px;}
+  43% {left:766px; top:522px;}
+  44% {left:1420px; top:195px;}
+  45% {left:912px; top:216px;}
+  46% {left:445px; top:56px;}
+  47% {left:519px; top:703px;}
+  48% {left:341px; top:86px;}
+  49% {left:1086px; top:178px;}
+  50% {left:417px; top:40px;}
+  51% {left:1032px; top:422px;}
+  52% {left:536px; top:530px;}
+  53% {left:211px; top:690px;}
+  54% {left:130px; top:419px;}
+  55% {left:20px; top:327px;}
+  56% {left:852px; top:527px;}
+  57% {left:1372px; top:370px;}
+  58% {left:1339px; top:394px;}
+  59% {left:1003px; top:614px;}
+  60% {left:10px; top:203px;}
+  61% {left:1px; top:518px;}
+  62% {left:294px; top:509px;}
+  63% {left:302px; top:3px;}
+  64% {left:936px; top:593px;}
+  65% {left:671px; top:661px;}
+  66% {left:430px; top:427px;}
+  67% {left:339px; top:475px;}
+  68% {left:946px; top:496px;}
+  69% {left:762px; top:30px;}
+  70% {left:80px; top:298px;}
+  71% {left:1161px; top:670px;}
+  72% {left:51px; top:104px;}
+  73% {left:954px; top:319px;}
+  74% {left:843px; top:351px;}
+  75% {left:235px; top:674px;}
+  76% {left:814px; top:29px;}
+  77% {left:1097px; top:488px;}
+  78% {left:672px; top:548px;}
+  79% {left:37px; top:542px;}
+  80% {left:1365px; top:434px;}
+  81% {left:897px; top:661px;}
+  82% {left:921px; top:28px;}
+  83% {left:858px; top:372px;}
+  84% {left:1238px; top:56px;}
+  85% {left:28px; top:636px;}
+  86% {left:1193px; top:243px;}
+  87% {left:978px; top:651px;}
+  88% {left:491px; top:262px;}
+  89% {left:246px; top:117px;}
+  90% {left:1157px; top:393px;}
+  91% {left:122px; top:64px;}
+  92% {left:1293px; top:168px;}
+  93% {left:1223px; top:316px;}
+  94% {left:7px; top:561px;}
+  95% {left:1257px; top:602px;}
+  96% {left:1221px; top:383px;}
+  97% {left:104px; top:680px;}
+  98% {left:1100px; top:575px;}
+  99% {left:329px; top:623px;}
+  100% {left:1184px; top:299px;}
+}
+
+.error17 {
+  animation-name: error17;
+  animation-duration: 100s;
+}
+
+@keyframes error17 {
+  0% {left:1414px; top:49px;}
+  1% {left:1315px; top:256px;}
+  2% {left:762px; top:153px;}
+  3% {left:243px; top:653px;}
+  4% {left:201px; top:514px;}
+  5% {left:663px; top:376px;}
+  6% {left:245px; top:357px;}
+  7% {left:2px; top:335px;}
+  8% {left:300px; top:518px;}
+  9% {left:1336px; top:577px;}
+  10% {left:1075px; top:670px;}
+  11% {left:1201px; top:678px;}
+  12% {left:1078px; top:653px;}
+  13% {left:1190px; top:189px;}
+  14% {left:685px; top:400px;}
+  15% {left:34px; top:238px;}
+  16% {left:1378px; top:381px;}
+  17% {left:1131px; top:59px;}
+  18% {left:1268px; top:51px;}
+  19% {left:726px; top:59px;}
+  20% {left:1295px; top:708px;}
+  21% {left:1037px; top:68px;}
+  22% {left:806px; top:308px;}
+  23% {left:704px; top:187px;}
+  24% {left:253px; top:680px;}
+  25% {left:243px; top:7px;}
+  26% {left:1208px; top:289px;}
+  27% {left:72px; top:167px;}
+  28% {left:268px; top:405px;}
+  29% {left:232px; top:705px;}
+  30% {left:163px; top:91px;}
+  31% {left:364px; top:492px;}
+  32% {left:1339px; top:82px;}
+  33% {left:321px; top:623px;}
+  34% {left:278px; top:370px;}
+  35% {left:458px; top:88px;}
+  36% {left:1372px; top:3px;}
+  37% {left:89px; top:540px;}
+  38% {left:1006px; top:93px;}
+  39% {left:208px; top:360px;}
+  40% {left:153px; top:456px;}
+  41% {left:618px; top:241px;}
+  42% {left:317px; top:30px;}
+  43% {left:109px; top:620px;}
+  44% {left:1191px; top:213px;}
+  45% {left:741px; top:688px;}
+  46% {left:547px; top:574px;}
+  47% {left:905px; top:693px;}
+  48% {left:662px; top:272px;}
+  49% {left:506px; top:33px;}
+  50% {left:1416px; top:291px;}
+  51% {left:197px; top:202px;}
+  52% {left:194px; top:247px;}
+  53% {left:964px; top:362px;}
+  54% {left:1229px; top:191px;}
+  55% {left:1269px; top:333px;}
+  56% {left:930px; top:48px;}
+  57% {left:805px; top:412px;}
+  58% {left:1109px; top:274px;}
+  59% {left:1025px; top:151px;}
+  60% {left:1069px; top:313px;}
+  61% {left:62px; top:471px;}
+  62% {left:425px; top:14px;}
+  63% {left:668px; top:45px;}
+  64% {left:915px; top:13px;}
+  65% {left:1098px; top:460px;}
+  66% {left:578px; top:108px;}
+  67% {left:636px; top:485px;}
+  68% {left:626px; top:18px;}
+  69% {left:952px; top:641px;}
+  70% {left:417px; top:674px;}
+  71% {left:623px; top:338px;}
+  72% {left:979px; top:709px;}
+  73% {left:606px; top:289px;}
+  74% {left:484px; top:2px;}
+  75% {left:1235px; top:54px;}
+  76% {left:470px; top:635px;}
+  77% {left:1231px; top:83px;}
+  78% {left:147px; top:188px;}
+  79% {left:1155px; top:583px;}
+  80% {left:332px; top:467px;}
+  81% {left:926px; top:375px;}
+  82% {left:671px; top:249px;}
+  83% {left:1062px; top:579px;}
+  84% {left:502px; top:55px;}
+  85% {left:1011px; top:74px;}
+  86% {left:760px; top:685px;}
+  87% {left:619px; top:551px;}
+  88% {left:303px; top:166px;}
+  89% {left:844px; top:624px;}
+  90% {left:316px; top:3px;}
+  91% {left:454px; top:563px;}
+  92% {left:596px; top:126px;}
+  93% {left:1406px; top:180px;}
+  94% {left:429px; top:584px;}
+  95% {left:220px; top:600px;}
+  96% {left:344px; top:542px;}
+  97% {left:1389px; top:566px;}
+  98% {left:291px; top:8px;}
+  99% {left:101px; top:213px;}
+  100% {left:528px; top:529px;}
+}
+
+.error18 {
+  animation-name: error18;
+  animation-duration: 70s;
+}
+
+@keyframes error18 {
+  0% {left:1265px; top:127px;}
+  1% {left:823px; top:629px;}
+  2% {left:841px; top:299px;}
+  3% {left:875px; top:4px;}
+  4% {left:320px; top:610px;}
+  5% {left:783px; top:137px;}
+  6% {left:76px; top:75px;}
+  7% {left:1304px; top:698px;}
+  8% {left:448px; top:620px;}
+  9% {left:1328px; top:190px;}
+  10% {left:756px; top:586px;}
+  11% {left:1055px; top:546px;}
+  12% {left:732px; top:563px;}
+  13% {left:1389px; top:119px;}
+  14% {left:1317px; top:499px;}
+  15% {left:252px; top:322px;}
+  16% {left:2px; top:483px;}
+  17% {left:1140px; top:531px;}
+  18% {left:515px; top:154px;}
+  19% {left:151px; top:0px;}
+  20% {left:1060px; top:350px;}
+  21% {left:169px; top:69px;}
+  22% {left:1221px; top:284px;}
+  23% {left:902px; top:285px;}
+  24% {left:734px; top:714px;}
+  25% {left:613px; top:35px;}
+  26% {left:787px; top:676px;}
+  27% {left:1224px; top:9px;}
+  28% {left:908px; top:656px;}
+  29% {left:638px; top:433px;}
+  30% {left:448px; top:693px;}
+  31% {left:589px; top:557px;}
+  32% {left:715px; top:356px;}
+  33% {left:315px; top:164px;}
+  34% {left:559px; top:667px;}
+  35% {left:100px; top:460px;}
+  36% {left:420px; top:349px;}
+  37% {left:982px; top:284px;}
+  38% {left:397px; top:231px;}
+  39% {left:931px; top:552px;}
+  40% {left:1055px; top:314px;}
+  41% {left:1243px; top:12px;}
+  42% {left:190px; top:240px;}
+  43% {left:273px; top:296px;}
+  44% {left:60px; top:432px;}
+  45% {left:139px; top:166px;}
+  46% {left:465px; top:73px;}
+  47% {left:11px; top:613px;}
+  48% {left:1384px; top:532px;}
+  49% {left:903px; top:695px;}
+  50% {left:335px; top:553px;}
+  51% {left:6px; top:574px;}
+  52% {left:721px; top:722px;}
+  53% {left:1302px; top:375px;}
+  54% {left:710px; top:545px;}
+  55% {left:877px; top:333px;}
+  56% {left:591px; top:710px;}
+  57% {left:831px; top:365px;}
+  58% {left:558px; top:244px;}
+  59% {left:1300px; top:469px;}
+  60% {left:276px; top:642px;}
+  61% {left:337px; top:368px;}
+  62% {left:889px; top:325px;}
+  63% {left:160px; top:626px;}
+  64% {left:239px; top:424px;}
+  65% {left:273px; top:323px;}
+  66% {left:1354px; top:312px;}
+  67% {left:1038px; top:267px;}
+  68% {left:410px; top:508px;}
+  69% {left:1290px; top:15px;}
+  70% {left:1023px; top:33px;}
+  71% {left:1101px; top:704px;}
+  72% {left:704px; top:597px;}
+  73% {left:893px; top:284px;}
+  74% {left:853px; top:36px;}
+  75% {left:759px; top:504px;}
+  76% {left:81px; top:537px;}
+  77% {left:1243px; top:79px;}
+  78% {left:920px; top:456px;}
+  79% {left:971px; top:660px;}
+  80% {left:886px; top:389px;}
+  81% {left:1070px; top:675px;}
+  82% {left:137px; top:484px;}
+  83% {left:986px; top:103px;}
+  84% {left:1298px; top:278px;}
+  85% {left:525px; top:676px;}
+  86% {left:521px; top:90px;}
+  87% {left:1412px; top:431px;}
+  88% {left:1200px; top:133px;}
+  89% {left:477px; top:622px;}
+  90% {left:789px; top:11px;}
+  91% {left:433px; top:322px;}
+  92% {left:1354px; top:298px;}
+  93% {left:656px; top:511px;}
+  94% {left:642px; top:554px;}
+  95% {left:47px; top:101px;}
+  96% {left:702px; top:321px;}
+  97% {left:1409px; top:8px;}
+  98% {left:57px; top:694px;}
+  99% {left:787px; top:498px;}
+  100% {left:530px; top:158px;}
+}
+
+.error19 {
+  animation-name: error19;
+  animation-duration: 80s;
+}
+
+@keyframes error19 {
+  0% {left:993px; top:118px;}
+  1% {left:1406px; top:123px;}
+  2% {left:1038px; top:111px;}
+  3% {left:1126px; top:570px;}
+  4% {left:436px; top:134px;}
+  5% {left:928px; top:688px;}
+  6% {left:1189px; top:75px;}
+  7% {left:826px; top:30px;}
+  8% {left:1099px; top:306px;}
+  9% {left:826px; top:585px;}
+  10% {left:984px; top:44px;}
+  11% {left:237px; top:346px;}
+  12% {left:278px; top:573px;}
+  13% {left:1271px; top:325px;}
+  14% {left:525px; top:252px;}
+  15% {left:1018px; top:300px;}
+  16% {left:440px; top:571px;}
+  17% {left:316px; top:578px;}
+  18% {left:176px; top:731px;}
+  19% {left:1167px; top:526px;}
+  20% {left:1165px; top:33px;}
+  21% {left:1220px; top:694px;}
+  22% {left:673px; top:355px;}
+  23% {left:637px; top:685px;}
+  24% {left:1345px; top:406px;}
+  25% {left:243px; top:348px;}
+  26% {left:1302px; top:593px;}
+  27% {left:579px; top:628px;}
+  28% {left:131px; top:677px;}
+  29% {left:647px; top:369px;}
+  30% {left:1361px; top:242px;}
+  31% {left:1390px; top:649px;}
+  32% {left:1346px; top:319px;}
+  33% {left:709px; top:518px;}
+  34% {left:778px; top:675px;}
+  35% {left:143px; top:222px;}
+  36% {left:1346px; top:567px;}
+  37% {left:1274px; top:481px;}
+  38% {left:858px; top:396px;}
+  39% {left:1386px; top:133px;}
+  40% {left:941px; top:380px;}
+  41% {left:748px; top:362px;}
+  42% {left:75px; top:697px;}
+  43% {left:1103px; top:554px;}
+  44% {left:913px; top:719px;}
+  45% {left:123px; top:695px;}
+  46% {left:536px; top:125px;}
+  47% {left:137px; top:338px;}
+  48% {left:1345px; top:337px;}
+  49% {left:512px; top:349px;}
+  50% {left:1339px; top:84px;}
+  51% {left:1040px; top:194px;}
+  52% {left:857px; top:652px;}
+  53% {left:612px; top:366px;}
+  54% {left:486px; top:712px;}
+  55% {left:1189px; top:258px;}
+  56% {left:1111px; top:79px;}
+  57% {left:246px; top:555px;}
+  58% {left:391px; top:627px;}
+  59% {left:395px; top:427px;}
+  60% {left:912px; top:227px;}
+  61% {left:109px; top:684px;}
+  62% {left:498px; top:276px;}
+  63% {left:816px; top:37px;}
+  64% {left:508px; top:74px;}
+  65% {left:804px; top:490px;}
+  66% {left:111px; top:700px;}
+  67% {left:8px; top:374px;}
+  68% {left:823px; top:165px;}
+  69% {left:533px; top:395px;}
+  70% {left:116px; top:358px;}
+  71% {left:734px; top:313px;}
+  72% {left:905px; top:374px;}
+  73% {left:926px; top:590px;}
+  74% {left:1150px; top:122px;}
+  75% {left:242px; top:4px;}
+  76% {left:185px; top:252px;}
+  77% {left:252px; top:509px;}
+  78% {left:1294px; top:246px;}
+  79% {left:1207px; top:113px;}
+  80% {left:288px; top:603px;}
+  81% {left:1380px; top:458px;}
+  82% {left:900px; top:623px;}
+  83% {left:1269px; top:374px;}
+  84% {left:787px; top:32px;}
+  85% {left:621px; top:166px;}
+  86% {left:406px; top:659px;}
+  87% {left:714px; top:112px;}
+  88% {left:965px; top:673px;}
+  89% {left:864px; top:253px;}
+  90% {left:1322px; top:661px;}
+  91% {left:955px; top:86px;}
+  92% {left:711px; top:325px;}
+  93% {left:239px; top:254px;}
+  94% {left:419px; top:370px;}
+  95% {left:1183px; top:710px;}
+  96% {left:742px; top:278px;}
+  97% {left:519px; top:172px;}
+  98% {left:1315px; top:485px;}
+  99% {left:1283px; top:1px;}
+  100% {left:926px; top:417px;}
+}
+
+.error20 {
+  animation-name: error20;
+  animation-duration: 90s;
+}
+
+@keyframes error20 {
+  0% {left:489px; top:244px;}
+  1% {left:1265px; top:195px;}
+  2% {left:531px; top:492px;}
+  3% {left:949px; top:728px;}
+  4% {left:134px; top:55px;}
+  5% {left:269px; top:387px;}
+  6% {left:957px; top:592px;}
+  7% {left:976px; top:165px;}
+  8% {left:435px; top:557px;}
+  9% {left:1086px; top:590px;}
+  10% {left:1345px; top:134px;}
+  11% {left:1315px; top:444px;}
+  12% {left:964px; top:18px;}
+  13% {left:410px; top:493px;}
+  14% {left:484px; top:222px;}
+  15% {left:1237px; top:497px;}
+  16% {left:1352px; top:708px;}
+  17% {left:696px; top:601px;}
+  18% {left:519px; top:177px;}
+  19% {left:1190px; top:158px;}
+  20% {left:1022px; top:150px;}
+  21% {left:59px; top:710px;}
+  22% {left:336px; top:148px;}
+  23% {left:280px; top:137px;}
+  24% {left:1030px; top:659px;}
+  25% {left:28px; top:729px;}
+  26% {left:417px; top:106px;}
+  27% {left:31px; top:570px;}
+  28% {left:994px; top:414px;}
+  29% {left:154px; top:209px;}
+  30% {left:1208px; top:365px;}
+  31% {left:1175px; top:645px;}
+  32% {left:389px; top:620px;}
+  33% {left:203px; top:58px;}
+  34% {left:642px; top:498px;}
+  35% {left:576px; top:384px;}
+  36% {left:125px; top:72px;}
+  37% {left:1006px; top:284px;}
+  38% {left:963px; top:139px;}
+  39% {left:41px; top:495px;}
+  40% {left:374px; top:277px;}
+  41% {left:1410px; top:243px;}
+  42% {left:916px; top:251px;}
+  43% {left:216px; top:352px;}
+  44% {left:482px; top:29px;}
+  45% {left:532px; top:567px;}
+  46% {left:244px; top:710px;}
+  47% {left:1420px; top:227px;}
+  48% {left:691px; top:683px;}
+  49% {left:1084px; top:331px;}
+  50% {left:549px; top:242px;}
+  51% {left:1257px; top:386px;}
+  52% {left:218px; top:243px;}
+  53% {left:19px; top:669px;}
+  54% {left:652px; top:185px;}
+  55% {left:834px; top:135px;}
+  56% {left:85px; top:492px;}
+  57% {left:19px; top:478px;}
+  58% {left:1287px; top:686px;}
+  59% {left:1407px; top:640px;}
+  60% {left:1126px; top:578px;}
+  61% {left:1031px; top:239px;}
+  62% {left:553px; top:140px;}
+  63% {left:1071px; top:468px;}
+  64% {left:411px; top:608px;}
+  65% {left:1149px; top:135px;}
+  66% {left:1340px; top:168px;}
+  67% {left:817px; top:541px;}
+  68% {left:237px; top:27px;}
+  69% {left:701px; top:73px;}
+  70% {left:25px; top:226px;}
+  71% {left:292px; top:331px;}
+  72% {left:270px; top:185px;}
+  73% {left:777px; top:50px;}
+  74% {left:576px; top:327px;}
+  75% {left:576px; top:566px;}
+  76% {left:210px; top:610px;}
+  77% {left:1414px; top:469px;}
+  78% {left:1010px; top:96px;}
+  79% {left:532px; top:705px;}
+  80% {left:1225px; top:339px;}
+  81% {left:387px; top:118px;}
+  82% {left:1245px; top:256px;}
+  83% {left:530px; top:201px;}
+  84% {left:370px; top:639px;}
+  85% {left:31px; top:562px;}
+  86% {left:155px; top:697px;}
+  87% {left:136px; top:265px;}
+  88% {left:351px; top:374px;}
+  89% {left:598px; top:565px;}
+  90% {left:117px; top:335px;}
+  91% {left:763px; top:283px;}
+  92% {left:362px; top:298px;}
+  93% {left:1248px; top:313px;}
+  94% {left:204px; top:606px;}
+  95% {left:755px; top:160px;}
+  96% {left:699px; top:514px;}
+  97% {left:492px; top:396px;}
+  98% {left:779px; top:486px;}
+  99% {left:1018px; top:248px;}
+  100% {left:927px; top:116px;}
 }
