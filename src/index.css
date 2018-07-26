@@ -1,3 +1,6 @@
+/*Below are the styles i have included to overwrite the styles this project included by default. Although the basic
+  structure of the project is the same, the appearance is quite different.*/
+
 body {
   background: black;
   color: white;

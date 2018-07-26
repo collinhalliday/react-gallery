@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+//Includes navlinks for each route to direct app to appropriate route when associate link is clicked by user.
 const Navigation = (props) => (
   <nav className="main-nav">
     <ul>

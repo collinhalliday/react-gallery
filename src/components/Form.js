@@ -1,24 +1,31 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
+//This is the other component that includes state. It has its own local state that controls the display of the input
+//users type into the search input. Includes withRouter import to allow for access of history prop in dynamic routing below.
 class Form extends Component {
 
   state = {
     searchInput: ''
   }
 
+  //displays content typed into search input by user.
   handleSearchInput = event => {
     this.setState({
       searchInput: event.target.value
     });
   }
 
+  //upon form submit, app is redirected to search/:query route, and the content of the search input is added dynaically
+  //in place of the :query param, ensuring that a new route is envoked matching the search query and a search of Flickr
+  //is performed based on that search query. Form is also reset.
   handleFormSubmit = event => {
     event.preventDefault();
     this.props.history.push(`/search/${this.state.searchInput}`);
     event.currentTarget.reset();
   }
 
+  //Changes color of search button svg based upon mouseOver.
   svgRed = event => {
     if(event.target.tagName === "BUTTON")
       event.target.children[0].style.fill = "red";
@@ -28,6 +35,7 @@ class Form extends Component {
       event.target.parentNode.style.fill = "red";
   }
 
+  //Changes color of search button svg based upon mouseOut.
   svgWhite = event => {
     if(event.target.tagName === "BUTTON")
       event.target.children[0].style.fill = "white";

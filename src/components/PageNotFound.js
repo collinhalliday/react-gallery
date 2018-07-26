@@ -1,7 +1,9 @@
 import React from 'react';
 
+//image import.
 import angryJPG from '../images/angry.jpg';
 
+//Renders only when url does not match any routes specified in the App component.
 const PageNotFound = () => (
   <div>
     <div>

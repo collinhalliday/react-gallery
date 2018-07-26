@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Renderes a particular Flickr image based on various props passed from the gallery component. 
 const Image = (props) => (
   <li>
     <img
